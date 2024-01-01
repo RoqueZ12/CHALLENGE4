@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+  background-image: url('assets/bg-image.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+/* Estilos para inputs, textareas y select */
+input, textarea, select {
+  border-radius: 10px;
+  height: 40px;
+  margin-top: 3px;
+  padding-left: 10px;
+  box-shadow: 0.1rem 0.1rem 0.6rem #4036A9;
+  font-weight: bold;
+  border: none;
+}
+
+textarea {
+  height: 150px;
+  padding-top: 10px;
+}
+
+/* Estilos para el encabezado */
+header {
+  padding: 10px;
+}
+
+header img {
+  margin-left: 25px;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  display: grid;
+  place-items: center;
+  margin: 10px;
+}
+
+/* Estilos para la sección superior */
+.top {
+  margin-bottom: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.top h1 {
+  line-height: 4.5rem;
+  color: #F8FAFC;
+  font-size: 4rem;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+.top p {
+  width: 60%;
+  color: #F8FAFC;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Estilos para la tarjeta */
+.card {
+  width: 37rem;
+  background-color: #CDD5E0;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(246, 218, 255, 0.2431372549);
+}
+
+.card-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  margin: 20px;
+}
+
+.card-top div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-mid {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+/* Estilos para etiquetas y botones */
+label {
+  font-size: 0.75rem;
+  color: #FFFFFF;
+}
+
+.styled-button {
+  width: calc(100% - 35px);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #4036A9;
+  background-color: #FFFFFF;
+  border: none;
+  height: 50px;
+  box-shadow: 0.1rem 0.1rem 0.6rem #4036A9;
+}
+
+.styled-button:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+/* Estilos para el footer */
+footer {
+  color: #fff; 
+  padding: 20px 0; /* Espaciado interno */
+  text-align: center; 
+  bottom: 0; /* Alinear el footer en la parte inferior */
+  width: 100%; 
+}
+
+/* Estilos para el párrafo dentro del footer */
+footer p {
+  margin: 0; /* Eliminar el margen por defecto */
+  font-size: 0.875rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
