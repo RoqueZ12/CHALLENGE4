@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="query.css" />
-    <!-- Corregí la referencia al archivo CSS -->
     <title>CHALLENGE4</title>
   </head>
   <body>
@@ -25,19 +24,27 @@
           </p>
         </section>
         <!-- Aquí envolví la sección card con un elemento <form> -->
-        <form method="post">
+        <form id="contactForm" method="post">
           <section class="card">
             <div class="card-top">
               <div>
                 <label>Name</label>
-                <input type="text" name="name" placeholder="Ethan Johnson" />
+                <input
+                  type="text"
+                  name="name"
+                  pattern="[a-zA-Z\s]+"
+                  placeholder="Ethan Johnson"
+                  required
+                />
               </div>
               <div>
                 <label>Company Email</label>
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   placeholder="ethan@johnson.com"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
+                  required
                 />
               </div>
               <div>
@@ -76,5 +83,15 @@
     <footer>
       <p>Author: <strong>Santin0</strong></p>
     </footer>
+    <!-- pequeño js para formulario -->
+    <script>
+      // Escuchar el evento submit del formulario
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Formulario enviado exitosamente."); // Mostrar mensaje de envío exitoso
+        });
+    </script>
   </body>
 </html>

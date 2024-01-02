@@ -1,32 +1,24 @@
-/* Estilos generales que se aplican para todos los tamaños de pantalla */
-/* ... (tu código CSS existente) ... */
-
-/* Media query para 1280px */
-@media (max-width: 1280px) {
-  .container {
-    margin: 8px; /* Reducción del margen para una mejor visualización */
-  }
-  .top h1 {
-    font-size: 3.5rem; /* Ajuste del tamaño de fuente del título */
-  }
-  .top p {
-    width: 80%; /* Ajuste del ancho del párrafo */
-  }
-  .card {
-    width: 30rem; /* Reducción del ancho de la tarjeta */
-  }
-}
-
 /* Media query para 1024px */
 @media (max-width: 1024px) {
   .container {
     margin: 6px; /* Reducción adicional del margen */
   }
+  
   .top h1 {
     font-size: 3rem; /* Ajuste del tamaño de fuente del título */
   }
+  
   .card {
     width: 25rem; /* Reducción adicional del ancho de la tarjeta */
+  }
+  
+  /* Ajustes para los inputs y otros elementos dentro de la tarjeta */
+  .card input[type="text"],
+  .card textarea,
+  .card select {
+    width: 100%; /* Ajusta el ancho al 100% de su contenedor */
+    box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+    margin-bottom: 10px; /* Espacio entre elementos */
   }
 }
 
